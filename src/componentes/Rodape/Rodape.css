@@ -1,0 +1,21 @@
+.rodape {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #6278f7;
+    color: #fff;
+    padding: 40px;
+}
+
+
+.redes_sociais {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.rodape li {
+    list-style-type: none
+}
+
