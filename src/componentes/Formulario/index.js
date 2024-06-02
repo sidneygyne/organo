@@ -5,7 +5,7 @@ import Botao from '../Botao/index.js';
 import { useState } from 'react';
 
 
-const Formulario = (props) => {
+const Formulario = ({aoCadastrar, times}) => {
 
     // como a lista esta dulicada com a lista que tem no app.js raiz, foi substituido pelo codigo
     // times={times.map(time => time.nome)} no campo formulario o app.js raiz, 
@@ -27,8 +27,8 @@ const Formulario = (props) => {
  
     const aoSalvar = (evento) => {
         evento.preventDefault()
-        // console.log('Form foi submetido! => ', nome, cargo, imagem, time)
-        props.aoColaboradorCadastrado({
+        console.log('Form foi submetido! => ', nome, cargo, imagem, time)
+        aoCadastrar({
             nome,
             cargo,
             imagem,
@@ -71,8 +71,8 @@ const Formulario = (props) => {
 
                 <ListaSuspensa 
                     obrigatorio={true} 
-                    label="Time" 
-                    itens={props.times}
+                    label="Times" 
+                    itens={times}
                     valor={time}
                     aoAlterado={valor => setTime(valor)} 
                     />
