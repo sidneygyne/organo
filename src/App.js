@@ -5,7 +5,7 @@ import Formulario from './componentes/Formulario/index.js';
 import Time from './componentes/Time/index.js';
 import Rodape from './componentes/Rodape/index.js';
 
-function App() {
+function App() { 
 
   const [times, setTimes] = useState([
     {
